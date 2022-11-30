@@ -1,0 +1,21 @@
+.footer {
+    background-color: $bg-accent-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__contacts {
+       
+        width: 230px;
+        height: 135px;
+    }
+
+    &__our-contacts {
+        @extend %list;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

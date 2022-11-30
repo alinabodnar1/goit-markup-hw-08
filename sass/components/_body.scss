@@ -1,0 +1,13 @@
+body {
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+    font-size: $common-font-size;
+    line-height: $common-line-height;
+    font-weight: $regular-font-weight;
+    letter-spacing: $common-letter-spacing;
+    font-family: $primary-font;
+
+    @media screen and (min-width: 500px) {
+        background-color: orange;
+    }
+}

@@ -1,0 +1,29 @@
+
+.features {
+    display: flex;
+    justify-content: center;
+    @extend %list;
+    
+    &__item {
+        margin-right: 30px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: $common-font-size;
+        color: $title-text-color;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    &__icon {
+        @extend %flex;
+        width: auto;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $background-team-color;
+        margin-bottom: 30px;
+    }
+}

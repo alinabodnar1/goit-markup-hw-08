@@ -1,0 +1,13 @@
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+.container{
+    @extend %container;
+}
+
+.main-nav{
+    @extend %flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+

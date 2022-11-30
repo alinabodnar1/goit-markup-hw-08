@@ -1,0 +1,17 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.logo__first-part {
+    color: $accent-color;
+}
+
+.logo__second-part {
+    color: $black-color;
+}
+/* Мікс для білої частини логотипу */
+.footer__logo {
+    color: $primary-bg-color;
+}
