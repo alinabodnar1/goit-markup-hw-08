@@ -1,13 +1,24 @@
-header {
-    border-bottom: 1px solid #ECECEC;
-}
+// header {
+//     border-bottom: 1px solid #ECECEC;
+// }
 .container{
     @extend %container;
 }
 
-.main-nav{
-    @extend %flex;
-    padding-top: 0;
-    padding-bottom: 0;
+.main-nav {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        justify-content: flex-end;
+    } 
+    
+        
+   
 }
+
+// .main-nav{
+    // @extend %flex;
+    // padding-top: 0;
+    // padding-bottom: 0;
+// }
 

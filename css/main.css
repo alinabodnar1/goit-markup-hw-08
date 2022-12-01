@@ -23,13 +23,27 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
-.product__overlay, .form__checkbox, .modal__close, .subscribe__button, .clients__link, .social__link, .works__description, .features__icon, .main-nav {
+.product__overlay, .form__checkbox, .modal__close, .subscribe__button, .clients__link, .social__link, .works__description, .features__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,15 +94,6 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-header {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.main-nav {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .logo {

@@ -7,7 +7,4 @@ body {
     letter-spacing: $common-letter-spacing;
     font-family: $primary-font;
 
-    @media screen and (min-width: 500px) {
-        background-color: orange;
     }
-}
