@@ -1,0 +1,37 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 100%;
+
+    // До 480рх верстка - responsive, після 480рх - адаптивна 
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+.main-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;    
+}
+
+// .main-nav{
+    // @extend %flex;
+    // padding-top: 0;
+    // padding-bottom: 0;
+// }
+

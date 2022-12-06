@@ -1,3 +1,32 @@
+.join-us {
+    width: 206px;
+    height: 80px;
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    &__title {
+        @extend %join-us;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        } 
+    }
+    &__social {
+        margin-top: 20px;
+    }
+    &__social__link {
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms $function-transition;
+    }
+    &__social__icon {
+        fill: $primary-bg-color;
+    }
+    &__social__link:hover,
+    &__social__link:focus {
+        background-color: $accent-color;
+    }
+}
 // .join-us {
 //     width: 206px;
 //     height: 80px;

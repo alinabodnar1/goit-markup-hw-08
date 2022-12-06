@@ -4,6 +4,11 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+    
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 .logo__first-part {
     color: $accent-color;

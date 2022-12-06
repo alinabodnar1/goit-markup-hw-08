@@ -13,22 +13,34 @@
 </head>
 <body>
     <!-- Шапка сайту -->
-      <header>
+      <header class="page-header">
         <div class="container main-nav">
             <a href="./index.html" class="logo" lang="en">
                 <span class="logo__first-part">Web</span><span class="logo__second-part">Studio</span>
             </a>
-            <!-- Іконка мобільного меню -->
-            <svg class="mob_menu" width="40" height="40">
-                <use href="./images/icons.svg#icon-antenna"></use>
-            </svg>
-            <nav>
-                <ul class="list site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current site-nav__link--active">Студія</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-                    <li class="site-nav__item"><a href="./test.html" class="site-nav__link">Контакти</a></li>
-                </ul>
-            </nav>
+
+            <!-- Мобільне меню -->
+            <button type="button" 
+                    class="menu-toggle js-open-menu" 
+                    aria-expanded="false"  
+                    aria-controls="mobile-menu">
+                <!-- Іконка відкриття моб меню -->
+                <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+                    <use href="./images/icons.svg#icon-open-menu"></use>
+                </svg>
+            </button>
+            <!-- Меню навігаціі таблетка і десктопна версія -->
+            <ul class="list site-nav">
+                <li class="site-nav__item">
+                    <a href="./index.html" class="site-nav__link site-nav__link--current site-nav__link--active">Студія</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="./test.html" class="site-nav__link">Контакти</a>
+                </li>
+            </ul>
             <ul class="list contactus">
                 <li class="contactus__item">
                     <a href="mailto:info@devstudio.com" class="contactus__link">
@@ -58,7 +70,7 @@
                 </div>
             </section>
         <!--Features-->
-            <section class="section">
+            <section class="section-features">
                 <div class="container">
                     <h2  class="section__title visually-hidden">Наші особливості</h2>
                     <ul class="list features">
@@ -102,7 +114,7 @@
                 </div>
             </section>
             <!--Works-->
-            <section class="section section--nopadding">
+            <section class="section-works section--nopadding">
                 <div class="container">
                     <h2 class="section__title">Чим ми займаємося</h2>
                     <ul class="works list">
@@ -122,7 +134,7 @@
                 </div>
             </section>
             <!--Our team-->
-            <section class="section section--gray">
+            <section class="section-team">
                 <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="list team">
@@ -278,7 +290,7 @@
                 </div>
             </section>
             <!-- /* Regular clients */ -->
-            <section class="section">
+            <section class="section-clients">
                 <div class="container">
                     <h2 class="section__title">Постійні клієнти</h2>
                     <ul class="list clients">
@@ -328,6 +340,49 @@
                 </div>
             </section>
       </main>
+
+    <!-- Меню мобільної версіі і кнопка закриття бургера-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+            <svg  width="40" height="40" aria-label="Переключатель мобільного меню">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <ul class="list mobile-menu">
+            <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./test.html" class="mobile-menu__link">Контакти</a>
+            </li>
+        </ul>
+        <ul class="list mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__email">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="list mobile-social">
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Instagram</a></li>
+                <span class="mobile-social__line"></span>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Twitter</a></li>
+                <span class="mobile-social__line"></span>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Facebook</a></li>
+                <span class="mobile-social__line"></span>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">LinkedIn</a></li>
+        </ul>
+
+    </div>
+
       <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
@@ -405,7 +460,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__close" data-modal-close>
-                <svg class="modal__close-icon">
+                <svg class="modal__close-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -466,6 +521,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,14 +1,57 @@
-// .section {
-//     @extend %section;
+.section-team{
+    background-color: $background-team-color;
 
-//     &--gray {
-//         background-color: $background-team-color;
-//     }
+    @media screen and (max-width: 767px) {
+        @include section-padding(60px);
+     }
+ }
+.section__title{
+    @extend %section__title;
 
-//     &__title {
-//         @extend %section__title;
-//     }
-// }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+        }
+}
+.team {
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $primary-bg-color;
+                       
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    &__item:last-child {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 0;
+            }
+        }
+    &__figcaption {
+            @media screen and (max-width: 767px) {
+                    padding-top: 30px;
+                    padding-bottom: 24px;
+                }
+                }
+    &__member {
+        text-align: center;
+        color: $title-text-color;
+        font-weight: $medium-font-weight;
+        font-size: 16px;
+        line-height: 1.18;
+                }
+    &__position {
+        margin-top: 10px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.17;
+        }
+}
+// Для десктопа
 // .team {
 //     @extend %list;
 //     display: flex;

@@ -1,30 +1,27 @@
-// .our-contacts {
-//     @extend %a;
-
-//     &__item {
-//             @extend %list;
-//             margin-bottom: 9px;
-//     }
+.our-contacts {
+    &__item {
+          margin-bottom: 9px;
+    }
     
-//     &__address {
-//         color: $primary-bg-color;
-//         transition: color 250ms $function-transition;
-//         text-decoration: none;
-//     }
+    &__address {
+        color: $primary-bg-color;
+        transition: color 250ms $function-transition;
+        text-decoration: none;
+    }
     
-//     &__mail,
-//     &__tel {
-//         color: $address-color;
-//         transition: color 250ms $function-transition;
-//         text-decoration: none;
-//     }
+    &__mail,
+    &__tel {
+        color: $address-color;
+        transition: color 250ms $function-transition;
+        text-decoration: none;
+    }
     
-//     &__address:hover,
-//     &__address:focus,
-//     &__mail:hover,
-//     &__mail:focus,
-//     &__tel:hover,
-//     &__tel:focus {
-//         color: $accent-color;
-//     }
-// }
+    &__address:hover,
+    &__address:focus,
+    &__mail:hover,
+    &__mail:focus,
+    &__tel:hover,
+    &__tel:focus {
+        color: $accent-color;
+    }
+}

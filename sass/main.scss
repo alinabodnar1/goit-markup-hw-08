@@ -1,12 +1,14 @@
 
 @import './utils/variables';
 @import './utils/blackpoints';
+@import './utils/zero-styles';
+@import './utils/mixins';
 @import './utils/base';
-
 @import './utils/placeholders';
 
-@import './components/header';
+@import './components/page-header';
 @import './components/logo';
+@import './components/burger-menu';
 @import './components/site-nav';
 @import './components/contactus';
 
@@ -24,8 +26,9 @@
 @import './components/subscribe';
 
 @import './components/backdrop';
-@import './components/modal';
 @import './components/form';
+@import './components/modal';
+
 
 @import './components/portfolio__button';
 @import './components/grid';
