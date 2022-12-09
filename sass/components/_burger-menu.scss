@@ -61,18 +61,19 @@
 }
     
 .mobile-contacts{
-    margin-top: 130px;
+    margin-top: 306px;
         
     &__item {
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
     }
         
     &:last-child {
-        margin-bottom: 0;
+        // margin-bottom: 0;
     }
         
     &__tel{
         @include mobile-contacts (34px, $accent-color);
+        margin-bottom: 32px;
     }
 
     &__email {
@@ -82,28 +83,21 @@
 .mobile-social{
     display: flex;
     margin-top: 64px;
-    
-    &__item{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    
-    &__item:last-child {
-        margin-right: 0;
-    }
-    
-    &__item:first-child {
-        margin-left: 0;
-    }
 
     &__link{
         @include mobile-contacts (18px, $accent-color);
         line-height: 1.22;
-    }
-    &__line{
-        width: 1px;
-        height: 22px;
-        background-color: rgba(33, 33, 33, 0.2);
+        border-right: 2px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+        padding-left: 10px; 
+    
+    &__link:last-child {
+            padding-right: 0;
+        }
+        
+    &__link:first-child {
+            padding-left: 0;
+        }
     }
 }
         

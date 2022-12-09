@@ -1,17 +1,33 @@
 .footer {
     background-color: $bg-accent-color;
     @include section-padding(60px);
+    text-align: center;
+   
     
-    // Блок: лого + 3 рядки контактів
-    &__contacts {
-        @media screen and (max-width: 767px) {
-            text-align: center;
-            margin-bottom: 60px;
+    &__wrap {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
         }
+
     }
+    // Блок: лого + 3 рядки контакті
+    &__contacts {
+            margin-bottom: 60px;
+
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 0;
+                text-align: left;
+            }
+    }   
+    
     // Блок 3 рядки контактів
     &__our-contacts {
         margin-top: 20px;
+        
+        
     }
 }
 

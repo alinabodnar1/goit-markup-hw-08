@@ -1,9 +1,12 @@
 .our-contacts {
+
+    
     &__item {
           margin-bottom: 9px;
     }
     
     &__address {
+        line-height: 1.14;
         color: $primary-bg-color;
         transition: color 250ms $function-transition;
         text-decoration: none;
@@ -11,6 +14,7 @@
     
     &__mail,
     &__tel {
+        line-height: 1.14;
         color: $address-color;
         transition: color 250ms $function-transition;
         text-decoration: none;

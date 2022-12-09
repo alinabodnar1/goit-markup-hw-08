@@ -1,6 +1,5 @@
 .form {
     margin: 32px 32px 40px 32px;
-  
 
     &__welcome {
         display: block;
@@ -36,12 +35,8 @@
         border-radius: 4px;
         transition: border 250ms $function-transition,
         fill 250ms $function-transition;
-
-        @media screen and (max-width: 767px) {
-            max-width: 100%;
-            width: 100%;
         }
-    }
+    
 
     &__icon {
         position: absolute;

@@ -1,41 +1,61 @@
 .section-team{
     background-color: $background-team-color;
+    @include section-padding(60px);
 
-    @media screen and (max-width: 767px) {
-        @include section-padding(60px);
-     }
- }
-.section__title{
-    @extend %section__title;
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-        font-size: 28px;
-        line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+            @include section-padding(94px);
         }
 }
+
+.section__title{
+    @extend %section__title;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
+}
 .team {
+    // team для таблетки
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     &__item {
+        width: 100%;
+        margin-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: $primary-bg-color;
-                       
-            @media screen and (max-width: 767px) {
-                width: 100%;
-                margin-bottom: 30px;
-            }
+        
+    
+        // our team__item для таблетки 2 в ряд
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 2);
+            margin-bottom: 0;
         }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 120px) / 4);
+        }
+    }
+
     &__item:last-child {
-            @media screen and (max-width: 767px) {
-                margin-bottom: 0;
-            }
-        }
+        margin-bottom: 0;
+    }
+    
+    &__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+    }
     &__figcaption {
-            @media screen and (max-width: 767px) {
-                    padding-top: 30px;
-                    padding-bottom: 24px;
-                }
-                }
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+                
     &__member {
         text-align: center;
         color: $title-text-color;
