@@ -23,7 +23,8 @@
 }
 .main-nav {
     position: relative;
-    @extend %flex;
+    display: flex;
+    align-items: center;
     min-height: 60px;
     padding-top: 0;
     padding-bottom: 0;  
@@ -40,9 +41,4 @@
     }
 }
 
-// .main-nav{
-    // @extend %flex;
-    // padding-top: 0;
-    // padding-bottom: 0;
-// }
 

@@ -18,7 +18,7 @@
         background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero-mobile.jpg);
+            url(../images/hero/hero-mobile.jpg);
     
         // Для мобільного 2х (retina)
             @media screen and (min-device-pixel-ratino:2),
@@ -28,14 +28,14 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(/images/hero/hero-mobile-2x.jpg);
+                    url(../images/hero/hero-mobile-2x.jpg);
             }
                 // Для планшетного 1х
             @media screen and(min-width: 481px) {
                     background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url(/images/hero/hero-tablet.jpg);
+                        url(../images/hero/hero-tablet.jpg);
             }
                 // Для планшетного 2х(retina)
             @media screen and (min-width: 481px) and (min-device-pixel-ratino:2),
@@ -45,14 +45,14 @@
                     background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url(/images/hero/hero-tablet-2x.jpg);
+                        url(../images/hero/hero-tablet-2x.jpg);
             }
                 // Для декстопного 1х
             @media screen and(min-width: 769px) {
                     background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url(/images/hero/hero-desktop.jpg);
+                        url(../images/hero/hero-desktop.jpg);
             }
             
             // Для десктопного 2х
@@ -63,9 +63,9 @@
                     background-image: linear-gradient(to right,
                              rgba(47, 48, 58, 0.4),
                              rgba(47, 48, 58, 0.4)),
-                    url(/images/hero/hero-desktop-2x.jpg);
+                    url(../images/hero/hero-desktop-2x.jpg);
                     
-                    // max-width: 1600px;
+                    max-width: 1600px;
                     }
 
         }
@@ -93,38 +93,4 @@
                     min-width: 216px;
                 }
                              
-                
-
-//     &--theme {
-//         max-width: 1600px;
-//         height: 600px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         background: linear-gradient(to right,
-//             rgba(47, 48, 58, 0.4),
-//             rgba(47, 48, 58, 0.4)),
-//         url(../images/img-hero.jpg);
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-color: #C4C4C4;
-// 
-//     }
-
-//     &__title {
-//         width: 696px;
-//         margin: 0 auto;
-//         font-weight: 900;
-//         font-size: 44px;
-//         line-height: 1.4;
-//         text-transform: uppercase;
-//         color: $primary-bg-color;
-// text-align: center;
-//     }
-//     &__button {
-//         @extend %common-button;
-//         display: inline;
-//         margin-top: 30px;
-//         padding: 10px 32px;
-//         min-width: 216px;
-//     }
-}
+            }

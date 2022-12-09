@@ -12,13 +12,6 @@
     // @include section-padding(60px);
 // }
 
-//  Викликаємо в селекторі для десктопу:
-
-// .section-features,
-// .section-team {
-    // @include section-padding(94px);
-// }
-
 @mixin mobile-contacts ($font_size, $text_color){
     display: block;
     font-weight: $medium-font-weight;
