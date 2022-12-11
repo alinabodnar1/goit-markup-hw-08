@@ -417,7 +417,7 @@ body {
   }
 }
 .contactus__link {
-  display: inline-block;
+  display: block;
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
@@ -829,23 +829,35 @@ body {
   padding-bottom: 60px;
   text-align: center;
 }
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .footer__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .footer__contacts {
   margin-bottom: 60px;
+  width: 232px;
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
@@ -879,14 +891,19 @@ body {
 }
 
 .join-us {
-  width: 206px;
-  height: 80px;
-  margin: 0 auto;
   margin-bottom: 60px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .join-us {
+    margin-bottom: 0;
+    width: 206px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .join-us {
-    margin: 0 0 0 70px;
+    margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 .join-us__title {
@@ -914,7 +931,7 @@ body {
 }
 
 .subscribe {
-  text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .subscribe {
@@ -926,8 +943,6 @@ body {
   .subscribe {
     display: block;
     margin-left: 94px;
-    width: 570px;
-    height: 86px;
     text-align: left;
   }
 }
@@ -963,6 +978,7 @@ body {
   .subscribe__input {
     margin-bottom: 0;
     margin-right: 12px;
+    min-width: 358px;
   }
 }
 .subscribe__input__input:hover, .subscribe__input__input:focus {

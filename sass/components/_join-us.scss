@@ -1,11 +1,15 @@
 .join-us {
-    width: 206px;
-    height: 80px;
-    margin: 0 auto;
     margin-bottom: 60px;
+    width: 100%;
     
+    @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            width: 206px;
+        }
+
     @media screen and (min-width: 1200px) {
-            margin: 0 0 0 70px;
+            margin-left: 70px;
+            margin-bottom: 0;
         }
 
     &__title {
