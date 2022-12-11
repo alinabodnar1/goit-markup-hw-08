@@ -2,7 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 450px;
+    min-width: 320px;
+    height: auto;
     padding: 8px;
     border-radius: 4px;
     background-color: $primary-bg-color;
@@ -12,7 +13,7 @@
     transition: transform 250ms $function-transition;
     
     @media screen and (min-width: 1200px) {
-        min-width: 528px;
+        width: 528px;
     }
     
     &__close {

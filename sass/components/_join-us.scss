@@ -4,14 +4,8 @@
     margin: 0 auto;
     margin-bottom: 60px;
     
-    @media screen and (min-width: 768px) {
-            margin-left: 165px;
-            margin-top: 5px;
-        }
-
     @media screen and (min-width: 1200px) {
-        margin-left: 70px;
-        margin-top: 12px;
+            margin: 0 0 0 70px;
         }
 
     &__title {

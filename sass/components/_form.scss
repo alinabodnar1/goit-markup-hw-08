@@ -5,9 +5,13 @@
         display: block;
         padding-bottom: 12px;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         color: $title-text-color;
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+        }
 
     }
 
@@ -119,10 +123,25 @@
         display: inline-block;
         background: $accent-color;
     }
+    &__text-agree{
+        font-size: 12px;
+        line-height: 1.17;
 
+        @media screen and (min-width: 1200px) {
+            font-size: $common-font-size;
+            line-height: $common-line-height;
+        }
+    }
     &__contract {
+        font-size: 12px;
+        line-height: 1.17;
         color: $accent-color;
         text-decoration: underline;
+
+        @media screen and (min-width: 1200px) {
+            font-size: $common-font-size;
+            line-height: $common-line-height;
+        }
     }
 
     &__button {

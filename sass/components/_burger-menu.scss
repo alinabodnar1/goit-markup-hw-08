@@ -28,9 +28,15 @@
     padding: 48px 40px;
     z-index: 9;
     background-color: $primary-bg-color;
+
+    @media screen and (max-width: 480px) {
+        padding: 32px 26px;
+    }
         
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__icon:hover,
@@ -40,7 +46,6 @@
 }
         
 .mobile-menu{
-
     &__item{
     margin-bottom: 32px;
     }
@@ -49,8 +54,13 @@
     }
 
     &__link{
-    @include mobile-contacts (40px, $title-text-color);
-        
+        @include mobile-contacts (40px, $title-text-color);
+
+        @media screen and (max-width: 480px) {
+            @include mobile-contacts (28px, $title-text-color);
+        }
+    }
+
     &__link:hover,
     &__link:focus{
         color: $accent-color;
@@ -59,11 +69,9 @@
     &__link--current {
         color: $accent-color;
     }
-}
 }   
-.mobile-contacts{
-    margin-top: 306px;
-        
+
+.mobile-contacts{   
     &__item {
         margin-bottom: 32px;
     }
@@ -75,30 +83,47 @@
     &__tel{
         @include mobile-contacts (34px, $accent-color);
         margin-bottom: 32px;
+
+        @media screen and (max-width: 480px) {
+            @include mobile-contacts (24px, $accent-color);
+        }
     }
 
     &__email {
         @include mobile-contacts (24px, $primary-text-color);
+
+        @media screen and (max-width: 480px) {
+            @include mobile-contacts (20px, $primary-text-color);
+        }
     }
 }
 .mobile-social{
     display: flex;
+    gap: 10px;
     margin-top: 64px;
 
+    @media screen and (max-width: 480px) {
+            gap: 6px;
+        }
+
+    &__item{
+        border-right: 2px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__item:last-child{
+        border-right: 0;
+    }
+
     &__link{
+        display: inline-block;
         @include mobile-contacts (18px, $accent-color);
         line-height: 1.22;
-        border-right: 2px solid rgba(33, 33, 33, 0.2);
         padding-right: 10px;
-        padding-left: 10px; 
-    
-    &__link:last-child {
-            padding-right: 0;
+
+        @media screen and (max-width: 480px) {
+            font-size: $common-font-size;
+            line-height: $common-line-height;
         }
-        
-    &__link:first-child {
-            padding-left: 0;
-        }
-    }
+    }  
 }
         

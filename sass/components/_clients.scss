@@ -18,12 +18,17 @@
     flex-wrap: wrap;
     gap: 30px;
     
+    @media screen and (max-width: 480px) {
+            width: 210px;
+            margin: 0 auto;
+        }
+
     &__item {
-        
         height: 92px;
         flex-basis: calc((100% - 60px) / 2);
-        width: 100%;
-    
+        min-width: 210px;
+
+
         // clients__item для таблетки 2 ряда по 3
         @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 90px) / 3);
