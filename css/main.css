@@ -857,7 +857,6 @@ body {
 }
 .footer__contacts {
   margin-bottom: 60px;
-  width: 232px;
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
@@ -941,7 +940,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    display: block;
+    width: 570px;
     margin-left: 94px;
     text-align: left;
   }
@@ -978,7 +977,6 @@ body {
   .subscribe__input {
     margin-bottom: 0;
     margin-right: 12px;
-    min-width: 358px;
   }
 }
 .subscribe__input__input:hover, .subscribe__input__input:focus {
