@@ -1,59 +1,56 @@
 .contactus {
-   display: none;
+  display: none;
 
-   // contactus для таблетки
-   @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 
-      @media screen and (min-width: 1200px) {
-         margin-left: auto;
-         flex-direction: row;
-         align-items: baseline;
-         
-      }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    flex-direction: row;
+    align-items: baseline;
+  }
 
-   &__item{
-      margin-bottom: 10px;
+  &__item {
+    margin-bottom: 10px;
 
-       @media screen and (min-width: 1200px) {
-         margin-bottom: 0;
-         margin-right: 50px;
-         }
-   }
-   &__item:last-child {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 0;
+      margin-right: 50px;
+    }
+  }
+  &__item:last-child {
+    margin-bottom: 0;
 
-       @media screen and (min-width: 1200px) {
-         margin-right: 0;
-         }
-   }
-   &__link {
-      display: block;
-      color: $primary-text-color;
-      font-weight: $medium-font-weight;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      transition: color 250ms var(--function-transition);
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    color: $primary-text-color;
+    font-weight: $medium-font-weight;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms var(--function-transition);
 
-      @media screen and (min-width: 1200px) {
-         padding-top: 32px;
-         padding-bottom: 32px;
-      }
-   }
-   
-   &__link:hover,
-   &__link:focus {
-      color: $accent-color;
-   }
-   
-   &__link>&__icon-mail,
-   &__link>&__icon-tel {
-      margin-right: 10px;
-      fill: currentColor;
-      vertical-align: middle;
-   }
-  
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link > &__icon-mail,
+  &__link > &__icon-tel {
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+  }
 }

@@ -1,22 +1,22 @@
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    line-height: 1.17;
-    text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
 
-        @media screen and (min-width: 1200px) {
-            font-size: 26px;
-            line-height: 1.19;
-        }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__first-part {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .logo__second-part {
-    color: $black-color;
+  color: $black-color;
 }
-/* Мікс для білої частини логотипу */
+
 .footer__logo {
-    color: $primary-bg-color;
+  color: $primary-bg-color;
 }

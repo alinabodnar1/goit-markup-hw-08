@@ -1,35 +1,33 @@
 .footer {
-    background-color: $bg-accent-color;
-    @include section-padding(60px);
-    text-align: center;
+  background-color: $bg-accent-color;
+  @include section-padding(60px);
+  text-align: center;
 
-    
-    &__wrap {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-        @media screen and (min-width: 768px) {
-            justify-content: space-around;
-            align-items: baseline;
-        }
-
-        @media screen and (min-width: 1200px) {
-            justify-content: flex-start;
-        }
-
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+      align-items: baseline;
     }
-    // Блок: лого + 3 рядки контакті
-    &__contacts {
-            margin-bottom: 60px;
 
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 0;
-                text-align: left;
-            }
-    }   
-    // Блок 3 рядки контактів
-    &__our-contacts {
-        margin-top: 20px;   
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
     }
+  }
+
+  &__contacts {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  &__our-contacts {
+    margin-top: 20px;
+  }
 }

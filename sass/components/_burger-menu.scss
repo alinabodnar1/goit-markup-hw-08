@@ -1,129 +1,127 @@
 .menu-toggle {
-    display: inline-flex;
-    position: absolute; 
-    top: 10px; 
-    right: 15px; 
-    margin: 0;
-    padding: 0;
-    min-height: 40px;
-    min-width: 40px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: transparent;
-    outline: none;
-    border: none;
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: none;
 
-    @media (min-width: 768px) {
-        display: none;
-    }
- }
-
-.menu-container{
+  @media (min-width: 768px) {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    z-index: 9;
-    background-color: $primary-bg-color;
-
-    @media screen and (max-width: 480px) {
-        padding: 32px 26px;
-    }
-        
-    &.is-open {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__icon:hover,
-    &__icon:focus{
-        color: $accent-color;
-    }
+  }
 }
-        
-.mobile-menu{
-    &__item{
-    margin-bottom: 32px;
-    }
-    &__item:last-child {
-        margin-bottom: 0;
-    }
 
-    &__link{
-        @include mobile-contacts (40px, $title-text-color);
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  z-index: 9;
+  background-color: $primary-bg-color;
 
-        @media screen and (max-width: 480px) {
-            @include mobile-contacts (28px, $title-text-color);
-        }
-    }
+  @media screen and (max-width: 480px) {
+    padding: 32px 26px;
+  }
 
-    &__link:hover,
-    &__link:focus{
-        color: $accent-color;
-    }
-        
-    &__link--current {
-        color: $accent-color;
-    }
-}   
-
-.mobile-contacts{   
-    &__item {
-        margin-bottom: 32px;
-    }
-        
-    &:last-child {
-        margin-bottom: 0;
-    }
-        
-    &__tel{
-        @include mobile-contacts (34px, $accent-color);
-        margin-bottom: 32px;
-
-        @media screen and (max-width: 480px) {
-            @include mobile-contacts (24px, $accent-color);
-        }
-    }
-
-    &__email {
-        @include mobile-contacts (24px, $primary-text-color);
-
-        @media screen and (max-width: 480px) {
-            @include mobile-contacts (20px, $primary-text-color);
-        }
-    }
-}
-.mobile-social{
+  &.is-open {
     display: flex;
-    gap: 10px;
-    margin-top: 64px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: $accent-color;
+  }
+}
+
+.mobile-menu {
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    @include mobile-contacts(40px, $title-text-color);
 
     @media screen and (max-width: 480px) {
-            gap: 6px;
-        }
-
-    &__item{
-        border-right: 2px solid rgba(33, 33, 33, 0.2);
+      @include mobile-contacts(28px, $title-text-color);
     }
+  }
 
-    &__item:last-child{
-        border-right: 0;
-    }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
 
-    &__link{
-        display: inline-block;
-        @include mobile-contacts (18px, $accent-color);
-        line-height: 1.22;
-        padding-right: 10px;
-
-        @media screen and (max-width: 480px) {
-            font-size: $common-font-size;
-            line-height: $common-line-height;
-        }
-    }  
+  &__link--current {
+    color: $accent-color;
+  }
 }
-        
+
+.mobile-contacts {
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__tel {
+    @include mobile-contacts(34px, $accent-color);
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 480px) {
+      @include mobile-contacts(24px, $accent-color);
+    }
+  }
+
+  &__email {
+    @include mobile-contacts(24px, $primary-text-color);
+
+    @media screen and (max-width: 480px) {
+      @include mobile-contacts(20px, $primary-text-color);
+    }
+  }
+}
+.mobile-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 64px;
+
+  @media screen and (max-width: 480px) {
+    gap: 6px;
+  }
+
+  &__item {
+    border-right: 2px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__item:last-child {
+    border-right: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    @include mobile-contacts(18px, $accent-color);
+    line-height: 1.22;
+    padding-right: 10px;
+
+    @media screen and (max-width: 480px) {
+      font-size: $common-font-size;
+      line-height: $common-line-height;
+    }
+  }
+}

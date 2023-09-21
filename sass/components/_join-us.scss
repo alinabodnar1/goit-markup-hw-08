@@ -1,38 +1,38 @@
 .join-us {
-    margin-bottom: 60px;
-    width: 100%;
-    
-    @media screen and (min-width: 768px) {
-            margin-bottom: 0;
-            width: 206px;
-        }
+  margin-bottom: 60px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 206px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @extend %join-us;
+    text-align: center;
 
     @media screen and (min-width: 1200px) {
-            margin-left: 70px;
-            margin-bottom: 0;
-        }
-
-    &__title {
-        @extend %join-us;
-        text-align: center;
-        
-        @media screen and (min-width: 1200px) {
-            text-align: left;
-        }
+      text-align: left;
     }
-    &__social {
-        margin-top: 20px;
-    }
-    &__social__link {
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        transition: background-color 250ms $function-transition;
-    }
-    &__social__icon {
-        fill: $primary-bg-color;
-    }
-    &__social__link:hover,
-    &__social__link:focus {
-        background-color: $accent-color;
-    }
+  }
+  &__social {
+    margin-top: 20px;
+  }
+  &__social__link {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $function-transition;
+  }
+  &__social__icon {
+    fill: $primary-bg-color;
+  }
+  &__social__link:hover,
+  &__social__link:focus {
+    background-color: $accent-color;
+  }
 }
